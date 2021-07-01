@@ -1,0 +1,26 @@
+.root {
+  margin-top: 70px;
+  height: 350px;
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  line-height: 1.5;
+  padding: 25px;
+  width: 750px;
+  margin-left: 40px;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 21px;
+  overflow-y: scroll;
+  text-align: left;
+  direction: rtl;
+}
+
+.root::-webkit-scrollbar {
+  background-color: black;
+  width: 16px;
+  border-radius: 8px;
+}
+.root::-webkit-scrollbar-thumb {
+  background-color: #cf578d;
+  width: 25px;
+  border-radius: 50px;
+}

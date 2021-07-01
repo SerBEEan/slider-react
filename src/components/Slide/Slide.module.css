@@ -1,0 +1,15 @@
+.root {
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+}
+
+.slide {
+    height: 768px;
+}
+
+.container {
+    width: 870px;
+    position: absolute;
+    top: 0px;
+}

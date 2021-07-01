@@ -1,0 +1,11 @@
+.footer {
+  position: absolute;
+  top: 95%;
+  font-weight: bolder;
+  width: 1024px;
+}
+
+.container {
+  width: 870px;
+  margin: 0 auto;
+}
