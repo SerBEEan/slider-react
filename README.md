@@ -3,7 +3,7 @@
 
 ## Запуск
 ```
-npm install && npm run start
+cd slider-react && npm install && npm run start
 ```
 
 ## Предпросмотр
