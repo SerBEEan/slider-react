@@ -22,3 +22,7 @@
 .home {
   font-size: 32px;
 }
+
+.disabled {
+  z-index: 1;
+}

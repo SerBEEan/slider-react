@@ -5,52 +5,55 @@ import { Header } from './components/Header';
 import { Slide } from './components/Slide';
 import { Footer } from './components/Footer';
 import { BlockScroll } from './components/BlockScroll';
+import { Popup } from './components/Popup';
 
-let x1 = null;
-let y1 = null;
 
 function App() {
   const [targetSlide, setTargetSlide] = useState(0);
+  const [clickPoint, setClickPoint] = useState({ x1: null, y1: null });
+  const [isOpenPopup, setIsOpenPopup] = useState(false);
 
   const handleTouchStart = (e) => {
     const firstTouch = e.touches[0];
-    x1 = firstTouch.clientX;
-    y1 = firstTouch.clientY;
-
+    setClickPoint({ x1: firstTouch.clientX, y1: firstTouch.clientY });
   }
 
   const handleTouchMove = (e) => {
-    if (x1 == null || y1 == null) {
+    if (isOpenPopup) {
+      return;
+    }
+
+    if (clickPoint.x1 == null || clickPoint.y1 == null) {
       return false;
     }
 
-
     let x2 = e.touches[0].clientX;
     let y2 = e.touches[0].clientY;
-    let xDiff = x2 - x1;
-    let yDiff = y2 - y1;
+    let xDiff = x2 - clickPoint.x1;
+    let yDiff = y2 - clickPoint.y1;
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
         if (targetSlide <= 0) {
           return ;
         }
+        
         setTargetSlide((prev) => prev - 1);
       }
       else {
         if (targetSlide >= 2) {
           return ;
         }
+        
         setTargetSlide((prev) => prev + 1);
       }
     }
-    x1 = null;
-    y1 = null;
+    setClickPoint({ x1: null, y1: null });
   }
 
   return (
     <div className={ classes.root }>
-      <Header handleChangeSlide={ setTargetSlide } />
+      <Header disabled={ isOpenPopup } handleChangeSlide={ setTargetSlide } />
 
       <div className={ classes.slider }>
         <div
@@ -86,10 +89,10 @@ function App() {
           <Slide numberSlide={ 2 }>
             <div className={ classes.titleMessage }>Текст сообщения</div>
             <BlockScroll />
-            <img className={`${ classes.bgElems } ${ classes.box2Elem1 }`} src="/imgs/box2/1.png" alt="box2-1" />
-            <img className={`${ classes.bgElems } ${ classes.box2Elem3 }`} src="/imgs/box2/3.png" alt="box2-3" />
-            <img className={`${ classes.bgElems } ${ classes.box2Elem4 }`} src="/imgs/box2/4.png" alt="box2-4" />
-            <img className={`${ classes.bgElems } ${ classes.box2Elem5 }`} src="/imgs/box2/5.png" alt="box2-5" />
+            <img className={`${ classes.bgElems } ${ classes.box2Elem1 } ${ targetSlide === 1 && classes.animatonStart }`} src="/imgs/box2/1.png" alt="box2-1" />
+            <img className={`${ classes.bgElems } ${ classes.box2Elem3 } ${ targetSlide === 1 && classes.animatonStart }`} src="/imgs/box2/3.png" alt="box2-3" />
+            <img className={`${ classes.bgElems } ${ classes.box2Elem4 } ${ targetSlide === 1 && classes.animatonStart }`} src="/imgs/box2/4.png" alt="box2-4" />
+            <img className={`${ classes.bgElems } ${ classes.box2Elem5 } ${ targetSlide === 1 && classes.animatonStart }`} src="/imgs/box2/5.png" alt="box2-5" />
           </Slide>
           <Slide numberSlide={ 3 }>
             <img className={`${ classes.bgElems } ${ classes.box3ElemBottle } `} src="/imgs/box3/bottle.png" alt="bottle" />
@@ -103,9 +106,9 @@ function App() {
             <img className={`${ classes.bgElems } ${ classes.box3Elem8 } `} src="/imgs/box3/8.png" alt="box3-8" />
             <div className={ classes.keyMessage }>
               Ключевое сообщение
-                <div className={ classes.subtitle }>
-                  Brend <span className={ classes.bold }>XY</span>
-                </div>
+              <div className={ classes.subtitle }>
+                Brend <span className={ classes.bold }>XY</span>
+              </div>
             </div>
             <div className={ classes.content }>
               <div className={`${ classes.block } ${ classes.block1 }`}>
@@ -114,7 +117,7 @@ function App() {
                   3 раза в день после еды. После приема препарата рекомендуется воздержаться от пищи и напитков в течение 1 часа
                 </div>
               </div>
-              <div className={ classes.row }>
+              <div className={ classes.column }>
                 <div className={`${ classes.block } ${ classes.block2 }`}>
                   <img src="/imgs/box3/icon1.png" alt="icon" />
                   <div className={ classes.textBlock2 }>
@@ -122,7 +125,7 @@ function App() {
                   </div>
                 </div>
                 <div className={ classes.buttonRoot }>
-                  <button className={ classes.button }>
+                  <button className={`${ classes.button } ${ isOpenPopup && classes.openPopup }`} onClick={ () => setIsOpenPopup(true) }>
                     <span className={`material-icons ${ classes.icon }`}>add_circle_outline</span>
                     Подробнее
                   </button>
@@ -133,6 +136,8 @@ function App() {
         </div>
 
       </div>      
+
+      <Popup open={ isOpenPopup } handleClose={ () => setIsOpenPopup(false) } />
 
       <Footer />
     </div>

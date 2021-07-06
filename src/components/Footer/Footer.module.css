@@ -3,6 +3,7 @@
   top: 95%;
   font-weight: bolder;
   width: 1024px;
+  z-index: 4;
 }
 
 .container {
