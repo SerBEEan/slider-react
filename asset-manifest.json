@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://serbeean.github.io/slider-react/static/css/main.d5bf9f65.chunk.css",
-    "main.js": "https://serbeean.github.io/slider-react/static/js/main.14cb7021.chunk.js",
-    "main.js.map": "https://serbeean.github.io/slider-react/static/js/main.14cb7021.chunk.js.map",
-    "runtime-main.js": "https://serbeean.github.io/slider-react/static/js/runtime-main.98bc453e.js",
-    "runtime-main.js.map": "https://serbeean.github.io/slider-react/static/js/runtime-main.98bc453e.js.map",
-    "static/js/2.e62ae41d.chunk.js": "https://serbeean.github.io/slider-react/static/js/2.e62ae41d.chunk.js",
-    "static/js/2.e62ae41d.chunk.js.map": "https://serbeean.github.io/slider-react/static/js/2.e62ae41d.chunk.js.map",
-    "static/js/3.c9c9f838.chunk.js": "https://serbeean.github.io/slider-react/static/js/3.c9c9f838.chunk.js",
-    "static/js/3.c9c9f838.chunk.js.map": "https://serbeean.github.io/slider-react/static/js/3.c9c9f838.chunk.js.map",
-    "index.html": "https://serbeean.github.io/slider-react/index.html",
-    "static/css/main.d5bf9f65.chunk.css.map": "https://serbeean.github.io/slider-react/static/css/main.d5bf9f65.chunk.css.map",
-    "static/js/2.e62ae41d.chunk.js.LICENSE.txt": "https://serbeean.github.io/slider-react/static/js/2.e62ae41d.chunk.js.LICENSE.txt"
+    "main.css": "/slider-react/static/css/main.d5bf9f65.chunk.css",
+    "main.js": "/slider-react/static/js/main.070d0bf5.chunk.js",
+    "main.js.map": "/slider-react/static/js/main.070d0bf5.chunk.js.map",
+    "runtime-main.js": "/slider-react/static/js/runtime-main.9d4c2b43.js",
+    "runtime-main.js.map": "/slider-react/static/js/runtime-main.9d4c2b43.js.map",
+    "static/js/2.e62ae41d.chunk.js": "/slider-react/static/js/2.e62ae41d.chunk.js",
+    "static/js/2.e62ae41d.chunk.js.map": "/slider-react/static/js/2.e62ae41d.chunk.js.map",
+    "static/js/3.c9c9f838.chunk.js": "/slider-react/static/js/3.c9c9f838.chunk.js",
+    "static/js/3.c9c9f838.chunk.js.map": "/slider-react/static/js/3.c9c9f838.chunk.js.map",
+    "index.html": "/slider-react/index.html",
+    "static/css/main.d5bf9f65.chunk.css.map": "/slider-react/static/css/main.d5bf9f65.chunk.css.map",
+    "static/js/2.e62ae41d.chunk.js.LICENSE.txt": "/slider-react/static/js/2.e62ae41d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.98bc453e.js",
+    "static/js/runtime-main.9d4c2b43.js",
     "static/js/2.e62ae41d.chunk.js",
     "static/css/main.d5bf9f65.chunk.css",
-    "static/js/main.14cb7021.chunk.js"
+    "static/js/main.070d0bf5.chunk.js"
   ]
 }
