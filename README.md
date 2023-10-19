@@ -1,10 +1,16 @@
 # Слайдер на React
 Данный слайдер разработан строго под разрешение 1024*768px (iPad)
+***Реагирует только на события Touch***
 
-## Запуск
+[Demo](https://serbeean.github.io/slider-react/)
+
+## Start dev
 ```
-cd slider-react && npm install && npm run start
+git clone https://github.com/SerBEEan/slider-react.git && cd slider-react
+```
+```
+npm ci && npm run start
 ```
 
-## Предпросмотр
+## Preview
 ![preview](./public/imgs/preview.png)
