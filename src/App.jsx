@@ -76,34 +76,34 @@ function App() {
               </div>
             </div>
 
-            <img className={`${ classes.bgElems } ${ classes.box1Elem1 }`} src="/imgs/box1/1.png" alt="box1-1" />
-            <img className={`${ classes.bgElems } ${ classes.box1Elem2 }`} src="/imgs/box1/2.png" alt="box1-2" />
-            <img className={`${ classes.bgElems } ${ classes.box1Elem3 }`} src="/imgs/box1/3.png" alt="box1-3" />
-            <img className={`${ classes.bgElems } ${ classes.box1Elem4 }`} src="/imgs/box1/4.png" alt="box1-4" />
-            <img className={`${ classes.bgElems } ${ classes.box1Elem5 }`} src="/imgs/box1/5.png" alt="box1-5" />
-            <img className={`${ classes.bgElems } ${ classes.box1Elem6 }`} src="/imgs/box1/6.png" alt="box1-6" />
-            <img className={`${ classes.bgElems } ${ classes.box1Elem7 }`} src="/imgs/box1/7.png" alt="box1-7" />
-            <img className={`${ classes.bgElems } ${ classes.box1Elem8 }`} src="/imgs/box1/8.png" alt="box1-8" />
-            <img className={`${ classes.bgElems } ${ classes.box1Elem9 }`} src="/imgs/box1/9.png" alt="box1-9" />
+            <img className={`${ classes.bgElems } ${ classes.box1Elem1 }`} src="./imgs/box1/1.png" alt="box1-1" />
+            <img className={`${ classes.bgElems } ${ classes.box1Elem2 }`} src="./imgs/box1/2.png" alt="box1-2" />
+            <img className={`${ classes.bgElems } ${ classes.box1Elem3 }`} src="./imgs/box1/3.png" alt="box1-3" />
+            <img className={`${ classes.bgElems } ${ classes.box1Elem4 }`} src="./imgs/box1/4.png" alt="box1-4" />
+            <img className={`${ classes.bgElems } ${ classes.box1Elem5 }`} src="./imgs/box1/5.png" alt="box1-5" />
+            <img className={`${ classes.bgElems } ${ classes.box1Elem6 }`} src="./imgs/box1/6.png" alt="box1-6" />
+            <img className={`${ classes.bgElems } ${ classes.box1Elem7 }`} src="./imgs/box1/7.png" alt="box1-7" />
+            <img className={`${ classes.bgElems } ${ classes.box1Elem8 }`} src="./imgs/box1/8.png" alt="box1-8" />
+            <img className={`${ classes.bgElems } ${ classes.box1Elem9 }`} src="./imgs/box1/9.png" alt="box1-9" />
           </Slide>
           <Slide numberSlide={ 2 }>
             <div className={ classes.titleMessage }>Текст сообщения</div>
             <BlockScroll />
-            <img className={`${ classes.bgElems } ${ classes.box2Elem1 } ${ targetSlide === 1 && classes.animatonStart }`} src="/imgs/box2/1.png" alt="box2-1" />
-            <img className={`${ classes.bgElems } ${ classes.box2Elem3 } ${ targetSlide === 1 && classes.animatonStart }`} src="/imgs/box2/3.png" alt="box2-3" />
-            <img className={`${ classes.bgElems } ${ classes.box2Elem4 } ${ targetSlide === 1 && classes.animatonStart }`} src="/imgs/box2/4.png" alt="box2-4" />
-            <img className={`${ classes.bgElems } ${ classes.box2Elem5 } ${ targetSlide === 1 && classes.animatonStart }`} src="/imgs/box2/5.png" alt="box2-5" />
+            <img className={`${ classes.bgElems } ${ classes.box2Elem1 } ${ targetSlide === 1 && classes.animatonStart }`} src="./imgs/box2/1.png" alt="box2-1" />
+            <img className={`${ classes.bgElems } ${ classes.box2Elem3 } ${ targetSlide === 1 && classes.animatonStart }`} src="./imgs/box2/3.png" alt="box2-3" />
+            <img className={`${ classes.bgElems } ${ classes.box2Elem4 } ${ targetSlide === 1 && classes.animatonStart }`} src="./imgs/box2/4.png" alt="box2-4" />
+            <img className={`${ classes.bgElems } ${ classes.box2Elem5 } ${ targetSlide === 1 && classes.animatonStart }`} src="./imgs/box2/5.png" alt="box2-5" />
           </Slide>
           <Slide numberSlide={ 3 }>
-            <img className={`${ classes.bgElems } ${ classes.box3ElemBottle } `} src="/imgs/box3/bottle.png" alt="bottle" />
-            <img className={`${ classes.bgElems } ${ classes.box3Elem1 } `} src="/imgs/box3/1.png" alt="box3-1" />
-            <img className={`${ classes.bgElems } ${ classes.box3Elem2 } `} src="/imgs/box3/2.png" alt="box3-2" />
-            <img className={`${ classes.bgElems } ${ classes.box3Elem3 } `} src="/imgs/box3/3.png" alt="box3-3" />
-            <img className={`${ classes.bgElems } ${ classes.box3Elem4 } `} src="/imgs/box3/4.png" alt="box3-4" />
-            <img className={`${ classes.bgElems } ${ classes.box3Elem5 } `} src="/imgs/box3/5.png" alt="box3-5" />
-            <img className={`${ classes.bgElems } ${ classes.box3Elem6 } `} src="/imgs/box3/6.png" alt="box3-6" />
-            <img className={`${ classes.bgElems } ${ classes.box3Elem7 } `} src="/imgs/box3/7.png" alt="box3-7" />
-            <img className={`${ classes.bgElems } ${ classes.box3Elem8 } `} src="/imgs/box3/8.png" alt="box3-8" />
+            <img className={`${ classes.bgElems } ${ classes.box3ElemBottle } `} src="./imgs/box3/bottle.png" alt="bottle" />
+            <img className={`${ classes.bgElems } ${ classes.box3Elem1 } `} src="./imgs/box3/1.png" alt="box3-1" />
+            <img className={`${ classes.bgElems } ${ classes.box3Elem2 } `} src="./imgs/box3/2.png" alt="box3-2" />
+            <img className={`${ classes.bgElems } ${ classes.box3Elem3 } `} src="./imgs/box3/3.png" alt="box3-3" />
+            <img className={`${ classes.bgElems } ${ classes.box3Elem4 } `} src="./imgs/box3/4.png" alt="box3-4" />
+            <img className={`${ classes.bgElems } ${ classes.box3Elem5 } `} src="./imgs/box3/5.png" alt="box3-5" />
+            <img className={`${ classes.bgElems } ${ classes.box3Elem6 } `} src="./imgs/box3/6.png" alt="box3-6" />
+            <img className={`${ classes.bgElems } ${ classes.box3Elem7 } `} src="./imgs/box3/7.png" alt="box3-7" />
+            <img className={`${ classes.bgElems } ${ classes.box3Elem8 } `} src="./imgs/box3/8.png" alt="box3-8" />
             <div className={ classes.keyMessage }>
               Ключевое сообщение
               <div className={ classes.subtitle }>
@@ -112,14 +112,14 @@ function App() {
             </div>
             <div className={ classes.content }>
               <div className={`${ classes.block } ${ classes.block1 }`}>
-                <img src="/imgs/box3/icon2.png" alt="icon" />
+                <img src="./imgs/box3/icon2.png" alt="icon" />
                 <div className={ classes.textBlock1 }>
                   3 раза в день после еды. После приема препарата рекомендуется воздержаться от пищи и напитков в течение 1 часа
                 </div>
               </div>
               <div className={ classes.column }>
                 <div className={`${ classes.block } ${ classes.block2 }`}>
-                  <img src="/imgs/box3/icon1.png" alt="icon" />
+                  <img src="./imgs/box3/icon1.png" alt="icon" />
                   <div className={ classes.textBlock2 }>
                     Курс лечения от 7 дней до 1 мес.
                   </div>

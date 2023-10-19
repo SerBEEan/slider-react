@@ -6,7 +6,7 @@ export const Slide = ({ numberSlide, children }) => {
         <div className={ classes.root }>
             <img
               className={ classes.slide }
-              src={`/imgs/box${ numberSlide }/bg${ numberSlide }.png`}
+              src={`./imgs/box${ numberSlide }/bg${ numberSlide }.png`}
               alt={`Слайд №${ numberSlide }`}
             />
             <div className={ classes.container }>
